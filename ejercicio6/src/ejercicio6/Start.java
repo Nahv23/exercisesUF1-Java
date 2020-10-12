@@ -8,18 +8,16 @@ import java.util.Scanner;
 
 public class Start {
 
-	public static void main(String[] args) {
-		Scanner reader = new Scanner(System.in);
+	  public static void main(String[] args) {
+		  Scanner reader = new Scanner(System.in);
+		  
+		  float speed;
 
-		float radius;
+		  System.out.println("Introduce the speed in km/h");
+		  speed = reader.nextInt();
 
-		System.out.println("Introduce the radius");
-		
-		radius = reader.nextFloat();
+		  System.out.println("The speed in m/s is: " + Math.round((speed*5/18) * 100.0f)/ 100.0f);
 
-		System.out.println("The lenght is: " + (2 * Math.PI * radius));
-
-		System.out.println("The area is: " + (Math.PI * Math.pow(radius, 2)));
-	}
+		  }
 
 }
