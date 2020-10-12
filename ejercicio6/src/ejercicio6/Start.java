@@ -11,17 +11,15 @@ public class Start {
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 
-		float speed;
+		float radius;
 
-		try {
-			System.out.println("Introduce the speed in km/h");
-			speed = reader.nextInt();
+		System.out.println("Introduce the radius");
+		
+		radius = reader.nextFloat();
 
-			System.out.println("The speed in m/s is: " + speed * 5 / 18);
-		} finally {
-			reader.close();
-		}
+		System.out.println("The lenght is: " + (2 * Math.PI * radius));
 
+		System.out.println("The area is: " + (Math.PI * Math.pow(radius, 2)));
 	}
 
 }

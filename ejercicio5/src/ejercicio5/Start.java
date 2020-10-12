@@ -18,7 +18,7 @@ public class Start {
 			System.out.println("Introduce the radius");
 			radius = reader.nextInt();
 
-			System.out.println("The lenght is: " + (2 * Math.PI * radius));
+			System.out.println("The length is: " + (2 * Math.PI * radius));
 
 			System.out.println("The area is: " + (Math.PI * Math.pow(radius, 2)));
 		} finally {
